@@ -4,6 +4,6 @@
 | [[setting,mail_log_prefix]] | `%s(%u)<%{pid}><%{session}>:` | `%{protocol}(%{user})<%{process:pid}><%{session}>:` | New variable expansion syntax. |
 | [[setting,mailbox_list_drop_noselect]] | `no` | `yes` | `\NoSelect` folders are now dropped by default. |
 | `service/anvil/chroot` | empty | \<no value\> | Anvil is no longer chrooted. |
-| `service/anvil/user` | $default_internal_user | \<no value\> | Anvil runs as root. |
+| `service/anvil/user` | $default_internal_user | $SET:default_internal_user | Anvil runs as root. |
 | `service/auth-worker/process_limit` | 1 | 30 | |
 | [[setting,protocols]] | `imap pop3 lmtp` | | No protocols are enabled by default. |
